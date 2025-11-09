@@ -1,0 +1,168 @@
+:root {
+    --accent: #0066ff;
+    --muted: #6b7280;
+    --bg: #f8fafc;
+    --card: #ffffff;
+}
+
+* {
+    box-sizing: border-box
+}
+
+body {
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    margin: 0;
+    color: #111827;
+    background: var(--bg)
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 24px
+}
+
+.header {
+    background: transparent;
+    padding: 16px 0
+}
+
+.header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 18px
+}
+
+.nav a {
+    margin-left: 16px;
+    text-decoration: none;
+    color: var(--muted)
+}
+
+.section {
+    padding: 48px 0
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+    align-items: center
+}
+
+.hero-content h1 {
+    font-size: 28px;
+    margin: 0 0 8px
+}
+
+.lead {
+    color: var(--muted);
+    margin-bottom: 16px
+}
+
+.visual-card {
+    background: var(--card);
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(2, 6, 23, 0.08)
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 16px;
+    border-radius: 8px;
+    background: var(--accent);
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    cursor: pointer
+}
+
+.btn-ghost {
+    background: transparent;
+    border: 1px solid #e5e7eb;
+    margin-left: 8px
+}
+
+.contact-section {
+    background: transparent
+}
+
+.contact-form {
+    max-width: 720px;
+    background: var(--card);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(2, 6, 23, 0.04)
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 12px
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+    margin-top: 6px
+}
+
+.field-row {
+    display: flex;
+    gap: 12px
+}
+
+.field-row label {
+    flex: 1
+}
+
+.form-actions {
+    display: flex;
+    align-items: center;
+    margin-top: 12px
+}
+
+.error {
+    color: #b91c1c;
+    font-size: 13px
+}
+
+.status {
+    margin-top: 12px;
+    color: green
+}
+
+.footer {
+    padding: 24px 0;
+    text-align: center;
+    color: var(--muted)
+}
+
+
+/* Responsive */
+
+@media(min-width:880px) {
+    .hero-grid {
+        grid-template-columns: 1fr 380px
+    }
+    .hero-content h1 {
+        font-size: 36px
+    }
+}
+
+@media(max-width:600px) {
+    .container {
+        padding: 16px
+    }
+    .field-row {
+        flex-direction: column
+    }
+}
