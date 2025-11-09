@@ -10,3 +10,6 @@ export default defineConfig({
         }
     }
 });
+export default defineConfig({
+  base: "/ezlabs-landing-page/",
+});
